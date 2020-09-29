@@ -1,0 +1,51 @@
+<html>
+  <head><title>Calculater</title></head>
+
+  <script type='text/javascript'>
+
+    function addiere(){
+      var wert1 = document.getElementById('eingabe1').value;
+      var wert2 = document.getElementById('eingabe2').value;
+      var ergebnis = parseInt(wert1) + parseInt(wert2);
+      alert(ergebnis);
+   }
+   function sub(){
+      var wert1 = document.getElementById('eingabe1').value;
+      var wert2 = document.getElementById('eingabe2').value;
+      var ergebnis = parseInt(wert1) - parseInt(wert2);
+      alert(ergebnis);
+   }
+   
+   function mult(){
+      var wert1 = document.getElementById('eingabe1').value;
+      var wert2 = document.getElementById('eingabe2').value;
+      var ergebnis = parseInt(wert1) * parseInt(wert2);
+      alert(ergebnis);
+   }
+    function div(){
+      var wert1 = document.getElementById('eingabe1').value;
+      var wert2 = document.getElementById('eingabe2').value;
+      var ergebnis = parseInt(wert1)/parseInt(wert2);
+      alert(ergebnis);
+   }
+    function power(){
+      var wert1 = document.getElementById('eingabe1').value;
+      var wert2 = document.getElementById('eingabe2').value;
+      var ergebnis = parseInt(wert1)**parseInt(wert2);
+      alert(ergebnis);
+   }
+  </script>
+  <body bgcolor=red>
+
+    <div text-algin:center><p>
+      <input id="eingabe1" type="text" >
+      <input id="eingabe2" type="text" >
+      <button onclick="addiere()">+</button>
+	  <button onclick="sub()">-</button>
+	  <button onclick="mult()">*</button>
+	  <button onclick="div()">:</button>
+	  <button onclick="power()">power</button>
+    </p></div>
+
+  </body>
+</html>
